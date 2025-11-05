@@ -6163,7 +6163,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid #e5e5e5;
+  /* border: 1px solid #e5e5e5; */
   padding: 8px 10px;
   margin: 0 0 40px;
 }
@@ -6288,8 +6288,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin-left: 0;
 }
 .pagination ul li a {
-  display: block;
-  border-radius: 3px;
+ display: block;
+    border-radius: 3px;
+    background: #c70909;
+    color: #fff;
+    width: 131px;
+    padding: 6px 10px;
 }
 .pagination ul li a:hover {
   background: #C70909;
@@ -6918,7 +6922,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .product_d_right .product_desc {
   margin-bottom: 19px;
-  padding-bottom: 24px;
+  
   border-bottom: 1px solid #ebebeb;
 }
 @media only screen and (max-width: 767px) {
@@ -8501,7 +8505,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .contact_area {
-  padding: 20px;
+  padding: 40px;
   background: #ffffff;
 }
 
@@ -8967,7 +8971,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .about_content {
-  padding: 26px 30px 30px;
+  padding: 50px 30px 50px;
   text-align: center;
 }
 @media only screen and (max-width: 767px) {
@@ -9318,7 +9322,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .faq-style-wrap .panel-title a[aria-expanded=true] {
   border-radius: 3px 3px 0 0;
   color: #ffffff;
-  background: #C70909;
+  background: #4d4d4d;
 }
 
 .panel.panel-default {
@@ -11764,3 +11768,122 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   .widget_dropdown_categories li:hover a{
     color: red;
   }
+
+  .shoppage .col-lg-3{
+        margin-bottom: 78px !important;
+
+  }
+
+  .hm-enq-body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Floating Button */
+.hm-enq-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0055ff;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  user-select: none;
+}
+
+/* Overlay */
+.hm-enq-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Popup Box */
+.hm-enq-popup {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  width: 480px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+/* Close Button */
+.hm-enq-close {
+     position: absolute;
+    top: 0px;
+    right: 2px;
+    font-size: 36px;
+    cursor: pointer;
+    color: #555;
+}
+
+/* Field Styles */
+.hm-enq-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hm-enq-label {
+  font-size: 14px;
+  color: #333;
+}
+
+.hm-enq-input {
+  background: #f2f4f8;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+/* Submit */
+.hm-enq-submit {
+  background: #C70909;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.hm-enq-submit:hover { background: #474343; }
+
+.hm-enq-quantity-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hm-enq-qty-btn {
+  background: #0055ff;
+  color: #fff;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+}
+.hm-enq-qty-value {
+  min-width: 40px;
+  text-align: center;
+}
